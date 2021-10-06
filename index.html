@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Web 3</title>
+</head>
+    
+<body>
+<header class="header" id="headers">
+    <div class="container">
+        <div class="header__inner">
+         <img class="logo__images" src="logo.png" alt="logo">
+            <div class="header__logo">Web UI</div>
+        </div>
+            <nav class="nav" id="navigation">
+                <a class="nav__link" href="#">Home</a>
+                <a class="nav__link" href="#">Service</a>
+                <a class="nav__link" href="#">Help</a>
+            </nav>
+    </div>
+   </header>
+
+<!-- Загрузим React. -->
+  <!-- Примечание: при деплое на продакшен замените «development.js» на «production.min.js». -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Загрузим наш React-компонент. -->
+  <script src="like_button.js"></script>
+
+</body>

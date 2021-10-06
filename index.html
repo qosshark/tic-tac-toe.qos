@@ -1,34 +1,25 @@
- <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Web 3</title>
-</head>
-    
-<body>
-<header class="header" id="headers">
-    <div class="container">
-        <div class="header__inner">
-         <img class="logo__images" src="logo.png" alt="logo">
-            <div class="header__logo">Web UI</div>
-        </div>
-            <nav class="nav" id="navigation">
-                <a class="nav__link" href="#">Home</a>
-                <a class="nav__link" href="#">Service</a>
-                <a class="nav__link" href="#">Help</a>
-            </nav>
-    </div>
-   </header>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add React in One Minute</title>
+  </head>
+  <body>
 
-<!-- Загрузим React. -->
-  <!-- Примечание: при деплое на продакшен замените «development.js» на «production.min.js». -->
-  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <h2>Add React in One Minute</h2>
+    <p>This page demonstrates using React with no build tooling.</p>
+    <p>React is loaded as a script tag.</p>
 
-  <!-- Загрузим наш React-компонент. -->
-  <script src="like_button.js"></script>
+    <!-- We will put our React component inside this div. -->
+    <div id="like_button_container"></div>
 
-</body>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="like_button.js"></script>
+
+  </body>
 </html>
